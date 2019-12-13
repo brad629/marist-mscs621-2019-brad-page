@@ -13,7 +13,8 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 Syntax highlighted code block
 
 The web application is a python-flask server running on IBM's LinuxOne Community Cloud in a RedHat 
-Enterprise Linux server v7.6 - http://148.100.245.209:32000/home
+Enterprise Linux server v7.6 
+- http://148.100.245.209:32000/home
 
 
 The Flask web server interfaces with a mongo database running on an EC2 AWS linux image. 
