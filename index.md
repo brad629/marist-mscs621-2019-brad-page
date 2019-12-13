@@ -1,8 +1,9 @@
-## Welcome to GitHub Pages
+## Welcome to lol summoner lookup
 
-You can use the [editor on GitHub](https://github.com/brad629/marist-mscs621-2019-brad-page/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+ "lol summoner lookup" allows players of Riot Games' League of Legends to use their 
+summoner name (In Game Name) to search and view their recent match history.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+lol summoner lookup provides an easy way to check recent league of legends match history and statistics. since the application is browser based users can check their game history on the go, without installing the league of legends client.
 
 ### Markdown
 
@@ -11,15 +12,18 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+The web application is a python-flask server running on IBM's LinuxOne Community Cloud in a RedHat 
+Enterprise Linux server v7.6 - http://148.100.245.209:32000/home
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+The Flask web server interfaces with a mongo database running on an EC2 AWS linux image. 
+- http://18.222.17.121:27017/
+
+
+   If the user is found in the database stored information is returned.
+
+   If the user is not yet in the database the webserver performs API queries to Riot Games API - 
+   https://developer.riotgames.com/apis
 
 **Bold** and _Italic_ and `Code` text
 
